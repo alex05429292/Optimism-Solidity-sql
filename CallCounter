@@ -1,4 +1,4 @@
-pragma solidity ^0.8.0;
+pragma solidity 0.8.0;
 
 contract CallCounter {
     uint public callCount;
@@ -8,7 +8,6 @@ contract CallCounter {
     constructor() {
         callCount = 0;
     }
-
     function incrementCounter() public {
         callCount++;
         emit CallEvent(msg.sender, callCount);
