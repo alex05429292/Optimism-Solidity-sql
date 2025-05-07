@@ -10,7 +10,6 @@ contract SimpleToken {
         _;
     }
 
-    // Constructor function, called once during deployment
     constructor() {
         // Set the contract owner to the deployer's address
         owner = msg.sender;
