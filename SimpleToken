@@ -20,7 +20,6 @@ contract SimpleToken {
         // Check that the owner has enough tokens to transfer
         require(_amount <= balances[owner], "Insufficient tokens in the owner's balance");
 
-        // Decrease the owner's balance
         balances[owner] -= _amount;
 
         // Increase the recipient's balance
